@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fancy Fade-In Page</title>
+    <style>
+        /* CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+            /* This animation fades in the h1 element over 1 second */
+        }
+
+        section {
+            padding: 50px;
+        }
+
+        img,
+        p {
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+            /* This animation fades in the images and paragraphs over 1 second */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my Fancy Fade-In Page!</h1>
+    </header>
+    <section>
+        <img src="images\dandelion.jpg" height="400" width="400" alt="Image 1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus tellus ut magna interdum mollis.</p>
+        <img src="images\greens.jpg" height="400" width="400" alt="Image 2">
+        <p>Ut porttitor odio sed dui auctor vestibulum. Nullam ut velit nisi. </p>
+        <img src="images\woods.jpg" height="400" width="400" alt="Image 3">
+        <p>Mauris vel sapien eu dolor dictum efficitur ac vel quam. </p>
+    </section>
+</body>
+
+</html>
